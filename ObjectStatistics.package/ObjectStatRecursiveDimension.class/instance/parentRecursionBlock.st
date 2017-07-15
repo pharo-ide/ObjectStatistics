@@ -1,0 +1,3 @@
+accessing
+parentRecursionBlock
+	^ parentRecursionBlock

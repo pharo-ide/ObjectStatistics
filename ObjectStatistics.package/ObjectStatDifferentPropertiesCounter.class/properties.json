@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DenisKudryashov 6/1/2016 16:19",
+	"super" : "ObjectStatMetric",
+	"category" : "ObjectStatistics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"measuredProperties",
+		"propertyBlock"
+	],
+	"name" : "ObjectStatDifferentPropertiesCounter",
+	"type" : "normal"
+}

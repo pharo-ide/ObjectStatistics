@@ -1,0 +1,3 @@
+initialization
+defaultValue
+	^0

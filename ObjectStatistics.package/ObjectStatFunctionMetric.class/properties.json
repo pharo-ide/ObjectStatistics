@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 6/1/2016 16:21",
+	"super" : "ObjectStatMetric",
+	"category" : "ObjectStatistics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"functionBlock"
+	],
+	"name" : "ObjectStatFunctionMetric",
+	"type" : "normal"
+}

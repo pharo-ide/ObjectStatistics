@@ -1,0 +1,3 @@
+converting
+asObjectStatMetric
+	^self new

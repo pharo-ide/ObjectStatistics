@@ -1,0 +1,3 @@
+testing
+hasDimensions
+	^dimensions notEmpty 

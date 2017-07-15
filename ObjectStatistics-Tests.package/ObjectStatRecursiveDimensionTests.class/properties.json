@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ObjectStatistics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"childCall1",
+		"childCall2"
+	],
+	"name" : "ObjectStatRecursiveDimensionTests",
+	"type" : "normal"
+}

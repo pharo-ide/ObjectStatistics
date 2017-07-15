@@ -1,0 +1,3 @@
+accessing
+mainMetric
+	^statistics mainMetric
