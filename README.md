@@ -27,3 +27,16 @@ stat
 			
 stat accumulateAll: messageSends
  ```
+## Installation
+```Smalltalk
+Metacello new
+  baseline: 'ObjectStatistics';
+  repository: 'github://dionisiydk/ObjectStatistics';
+  load
+```
+Use following snippet for stable dependency in your project baseline:
+```Smalltalk
+spec
+    baseline: 'ObjectStatistics'
+    with: [ spec repository: 'github://dionisiydk/ObjectStatistics:v0.1.x' ]
+```
