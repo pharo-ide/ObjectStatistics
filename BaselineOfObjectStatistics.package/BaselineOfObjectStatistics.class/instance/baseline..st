@@ -4,10 +4,10 @@ baseline: spec
 	spec for: #'common' do: [
 		spec baseline: 'StateSpecs' with: [
 			spec 
-				repository: 'github://pharo-ide/StateSpecs:v2.4.10';
+				repository: 'github://dionisiydk/StateSpecs:v2.4.10';
 				loads: 'Core' ].
 		spec baseline: 'Mocketry' with: [
-			spec repository: 'github://pharo-iot/Mocketry:v4.0.7' ].
+			spec repository: 'github://dionisiydk/Mocketry:v4.0.7' ].
 		spec 
 			package: 'ObjectStatistics' with: [spec requires: #('StateSpecs')];
 			package: 'ObjectStatistics-Tests' with: [spec requires: #('ObjectStatistics' 'Mocketry')];
