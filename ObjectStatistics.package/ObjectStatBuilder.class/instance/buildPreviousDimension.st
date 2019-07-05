@@ -1,4 +1,0 @@
-building
-buildPreviousDimension
-
-	dimensions removeLast

@@ -1,3 +1,0 @@
-accessing
-currentDimension
-	^dimensions last

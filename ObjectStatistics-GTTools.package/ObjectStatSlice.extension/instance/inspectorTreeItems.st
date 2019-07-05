@@ -1,3 +1,0 @@
-*ObjectStatistics-GTTools
-inspectorTreeItems
-	^statistics inspectorTreeItems

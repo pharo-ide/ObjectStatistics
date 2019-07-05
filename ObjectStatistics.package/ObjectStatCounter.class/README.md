@@ -1,1 +1,0 @@
-I am metric which count all objects

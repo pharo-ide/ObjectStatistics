@@ -1,3 +1,0 @@
-converting
-asObjectStatMetric
-	^self new

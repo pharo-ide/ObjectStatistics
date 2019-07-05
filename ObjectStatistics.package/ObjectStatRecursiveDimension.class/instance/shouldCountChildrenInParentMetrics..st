@@ -1,3 +1,0 @@
-accessing
-shouldCountChildrenInParentMetrics: anObject
-	shouldCountChildrenInParentMetrics := anObject

@@ -1,3 +1,0 @@
-accessing
-coordinatesBlock
-	^ coordinatesBlock
