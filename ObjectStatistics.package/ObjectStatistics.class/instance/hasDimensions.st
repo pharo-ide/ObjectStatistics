@@ -1,3 +1,0 @@
-testing
-hasDimensions
-	^dimensions notEmpty 

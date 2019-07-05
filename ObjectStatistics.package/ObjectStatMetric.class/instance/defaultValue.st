@@ -1,3 +1,0 @@
-initialization
-defaultValue
-	^0
