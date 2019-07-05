@@ -31,12 +31,12 @@ stat accumulateAll: messageSends
 ```Smalltalk
 Metacello new
   baseline: 'ObjectStatistics';
-  repository: 'github://dionisiydk/ObjectStatistics';
+  repository: 'github://pharo-ide/ObjectStatistics';
   load
 ```
 Use following snippet for stable dependency in your project baseline:
 ```Smalltalk
 spec
     baseline: 'ObjectStatistics'
-    with: [ spec repository: 'github://dionisiydk/ObjectStatistics:v0.1.x' ]
+    with: [ spec repository: 'github://pharo-ide/ObjectStatistics:v1.0.0' ]
 ```
