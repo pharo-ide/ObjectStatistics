@@ -10,10 +10,10 @@ BaselineOfObjectStatistics >> baseline: spec [
 	spec for: #'common' do: [
 		spec baseline: 'StateSpecs' with: [
 			spec 
-				repository: 'github://dionisiydk/StateSpecs:v4.0.0';
+				repository: 'github://dionisiydk/StateSpecs:v4.0.2';
 				loads: 'Core' ].
 		spec baseline: 'Mocketry' with: [
-			spec repository: 'github://dionisiydk/Mocketry:v6.0.0' ].
+			spec repository: 'github://dionisiydk/Mocketry:v6.0.2' ].
 		spec 
 			package: 'ObjectStatistics' with: [spec requires: #('StateSpecs')];
 			package: 'ObjectStatistics-Tests' with: [spec requires: #('ObjectStatistics' 'Mocketry')];
@@ -23,4 +23,11 @@ BaselineOfObjectStatistics >> baseline: spec [
 			group: 'Core' with: #('ObjectStatistics');
 			group: 'Tests' with: #('ObjectStatistics-Tests') ]
 
+]
+
+{ #category : #accessing }
+BaselineOfObjectStatistics >> projectClass [
+	^ [ self class environment at: #MetacelloCypressBaselineProject ]
+		on: NotFound
+		do: [ super projectClass ]
 ]
