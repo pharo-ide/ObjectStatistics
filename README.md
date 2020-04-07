@@ -1,4 +1,6 @@
 # ObjectStatistics
+[![Build Status](https://travis-ci.org/pharo-ide/ObjectStatistics.svg?branch=master)](https://travis-ci.org/pharo-ide/ObjectStatistics)
+
 ObjectStatistics is tool to analyse set of objects by computing different kind of metrics and look at them from different angles.
 
 Imaging that we have collection of message sends and we want to know number of message sends in dimension of receiver, receiver class and message selector. We have different angles to look at this data: from receiver class to selector and receiver or from selector to receiver class and receiver or any other combination. 
