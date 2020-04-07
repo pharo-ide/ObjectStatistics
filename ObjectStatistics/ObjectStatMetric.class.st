@@ -36,7 +36,7 @@ Class {
 		'parent',
 		'objectsSpec'
 	],
-	#category : 'ObjectStatistics'
+	#category : #ObjectStatistics
 }
 
 { #category : #converting }
@@ -177,7 +177,7 @@ ObjectStatMetric >> prepareForDimensionOf: parentMetric [
 { #category : #printing }
 ObjectStatMetric >> printOn: aStream [
 
-	aStream << self value.
+	self value printOn: aStream.
 	
 	name ifNotNil: [ aStream << ' ' << name ].
 	
