@@ -5,9 +5,16 @@ ObjectStatistics class >> buildInspectionMetricsTreeFor: anObject in: aBuilder [
 	
 	^aBuilder newTree
 		roots: { anObject };
-		children: [ :receiver | receiver inspectorTreeItems];
+		children: [ :receiver | receiver inspectionTreeItems ];
 		expandAll;
 		yourself
+]
+
+{ #category : #'*ObjectStatistics-NewTools' }
+ObjectStatistics >> inspectionTreeItems [
+	dimensions size = 1 ifTrue: [ ^dimensions first inspectionTreeItems ].
+	
+	^dimensions reject: #isEmpty
 ]
 
 { #category : #'*ObjectStatistics-NewTools' }
