@@ -23,7 +23,7 @@ Class {
 		'statistics',
 		'coordinate'
 	],
-	#category : 'ObjectStatistics'
+	#category : #ObjectStatistics
 }
 
 { #category : #'instance creation' }
@@ -65,9 +65,9 @@ ObjectStatSlice >> mainMetric [
 
 { #category : #printing }
 ObjectStatSlice >> printOn: aStream [
-	
+	self haltOnce. 
 	coordinate printOn: aStream.
-	aStream << ': '.
+	aStream nextPutAll: ': '.
 	statistics printMetricsOn: aStream
 ]
 

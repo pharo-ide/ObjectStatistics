@@ -179,12 +179,12 @@ ObjectStatMetric >> printOn: aStream [
 
 	self value printOn: aStream.
 	
-	name ifNotNil: [ aStream << ' ' << name ].
+	name ifNotNil: [ aStream nextPutAll: ' '; nextPutAll: name ].
 	
 	parent ifNotNil: [ 
-		aStream << ' ('.
+		aStream nextPutAll: ' ('.
 		self percentage printOn: aStream showingDecimalPlaces: 2.
-		aStream << '%)']
+		aStream nextPutAll: '%)']
 ]
 
 { #category : #accessing }
