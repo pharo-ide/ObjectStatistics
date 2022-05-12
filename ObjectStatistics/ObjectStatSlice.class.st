@@ -64,8 +64,7 @@ ObjectStatSlice >> mainMetric [
 ]
 
 { #category : #printing }
-ObjectStatSlice >> printOn: aStream [
-	self haltOnce. 
+ObjectStatSlice >> printOn: aStream [ 
 	coordinate printOn: aStream.
 	aStream nextPutAll: ': '.
 	statistics printMetricsOn: aStream
