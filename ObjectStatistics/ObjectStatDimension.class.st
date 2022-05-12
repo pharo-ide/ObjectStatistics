@@ -42,7 +42,7 @@ Class {
 		'objectsSpec',
 		'coordinatesBlock'
 	],
-	#category : 'ObjectStatistics'
+	#category : #ObjectStatistics
 }
 
 { #category : #'instance creation' }
@@ -213,7 +213,10 @@ ObjectStatDimension >> prepareStatistics: anObjectStatistics [
 ObjectStatDimension >> printOn: aStream [
 	name ifNil: [ ^super printOn: aStream ].
 	
-	aStream << slices size << ' ' << name
+	aStream 
+		print: slices size;
+		nextPutAll: ' ';
+		nextPutAll: name
 ]
 
 { #category : #accessing }

@@ -59,7 +59,7 @@ Class {
 		'dimensions',
 		'dimensionsBuilder'
 	],
-	#category : 'ObjectStatistics'
+	#category : #ObjectStatistics
 }
 
 { #category : #examples }
@@ -370,7 +370,7 @@ ObjectStatistics >> printMetricsOn: aStream [
 	metrics first printOn: aStream.
 	metrics allButFirstDo: [ :each | 
 		each isMeaningful ifTrue: [ 
-			aStream << ', '.
+			aStream nextPutAll: ', '.
 			each printOn: aStream]]
 ]
 
@@ -378,9 +378,9 @@ ObjectStatistics >> printMetricsOn: aStream [
 ObjectStatistics >> printOn: aStream [
 	super printOn: aStream.
 	
-	aStream << '('.
+	aStream nextPutAll: '('.
 	self printMetricsOn: aStream.
-	aStream << ')'.
+	aStream nextPutAll: ')'.
 ]
 
 { #category : #'fluent api' }
