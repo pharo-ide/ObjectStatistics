@@ -10,10 +10,10 @@ BaselineOfObjectStatistics >> baseline: spec [
 	spec for: #'common' do: [
 		spec baseline: 'StateSpecs' with: [
 			spec 
-				repository: 'github://dionisiydk/StateSpecs:v5.0.1';
+				repository: 'github://dionisiydk/StateSpecs:v5.0.2';
 				loads: 'Core' ].
 		spec baseline: 'Mocketry' with: [
-			spec repository: 'github://dionisiydk/Mocketry:v7.0.1' ].
+			spec repository: 'github://dionisiydk/Mocketry:v7.0.2' ].
 		spec 
 			package: 'ObjectStatistics' with: [spec requires: #('StateSpecs')];
 			package: 'ObjectStatistics-Tests' with: [spec requires: #('ObjectStatistics' 'Mocketry')];
